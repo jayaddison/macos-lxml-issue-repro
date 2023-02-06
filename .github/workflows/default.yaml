@@ -4,8 +4,8 @@ jobs:
   default:
     strategy:
       matrix:
-        os: [macos-11]
-        python-version: ['3.8']
+        os: [macos-11, ubuntu-20.04]
+        python-version: ['3.9', '3.10']
         pip-lxml-flags: ['--only-binary=lxml', '--no-binary=lxml']
     runs-on: ${{ matrix.os }}
     steps:
