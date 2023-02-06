@@ -15,5 +15,5 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - if: ${{ matrix.os == 'ubuntu-20.04' }}
         run: sudo apt install -y libxml2-dev libxslt1-dev
-      - run: pip install ${{ matrix.pip-lxml-flags }} lxml==4.9.0
+      - run: pip install ${{ matrix.pip-lxml-flags }} lxml==4.9.1
       - run: python -m unittest
